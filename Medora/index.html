@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <title>MEDORA</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header and Navigation -->
+  <header class="bg-gray-800 text-white py-4 fixed w-full top-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center">
+        <a href="https://mardie328.github.io/MEDORA/" class="text-2xl font-bold">MEDORA</a>
+        <ul class="hidden md:flex space-x-6 items-center">
+          <li><a href="#introduction" class="hover:text-gray-300">Introduction</a></li>
+          <li><a href="#features" class="hover:text-gray-300">Features</a></li>
+          <li><a href="#about" class="hover:text-gray-300">About</a></li>
+          <li><a href="#contact-dev" class="hover:text-gray-300">Contact Dev</a></li>
+          <li><a href="https://medora-vhl.netlify.app/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Try Medora</a></li>
+        </ul>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- SVG for hamburger icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+    </nav>
+      
+
+    <!-- Mobile Navigation Links -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col space-y-4 p-4 text-center">
+        <li><a href="#introduction" class="hover:text-gray-300">Introduction</a></li>
+        <li><a href="#features" class="hover:text-gray-300">Features</a></li>
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#contact-dev" class="hover:text-gray-300">Contact Dev</a></li>
+        <li><a href="https://medora-vhl.netlify.app/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Try Medora</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section id="introduction" class="bg-white py-24">
+    <div class="container mx-auto text-center pt-12">
+      <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Medora Health Image" class="mx-auto mb-6 rounded-lg shadow-lg w-full h-64 object-cover">
+      <h1 class="text-4xl font-semibold mb-4">Welcome to MEDORA</h1>
+      <p class="mb-6 text-lg">
+        Medora is a comprehensive virtual health library designed to provide users with easy access to trusted health information, interactive tools, and personalized health assessments. Our focus is on making health information easily accessible, reliable, and personalized for every user. Access reliable health articles, check your symptoms, and assess your well-being—all in one place.
+      </p>
+      <a href="https://medora-vhl.netlify.app/" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">How Medora Can Help You</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Feature 1: Health Content -->
+        <div class="bg-white p-6 rounded-lg shadow-lg feature-card">
+          <img src="https://img.icons8.com/ios-filled/100/000000/health-book.png" alt="Health Content" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-4">Health Content</h3>
+          <p class="mb-4">
+            Stay informed with a library of well-researched content on health conditions, lifestyle tips, and wellness.
+          </p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">Read Articles</a>
+        </div>
+
+        <!-- Feature 2: Symptom Checker -->
+        <div class="bg-white p-6 rounded-lg shadow-lg feature-card">
+          <img src="https://img.icons8.com/ios-filled/100/000000/stethoscope.png" alt="Symptom Checker" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-4">Symptom Checker</h3>
+          <p class="mb-4">
+            Input your symptoms and get insights into potential health conditions in seconds.
+          </p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">Check Symptoms</a>
+        </div>
+
+        <!-- Feature 3: Personalized Experience -->
+        <div class="bg-white p-6 rounded-lg shadow-lg feature-card">
+          <img src="https://img.icons8.com/ios-filled/100/000000/personal-growth.png" alt="Personalized Experience" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-4">Personalized Experience</h3>
+          <p class="mb-4">
+            Customize your preferences to receive content tailored to your health interests and track your well-being goals.
+          </p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">Customize Experience</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Medora</h2>
+      <p class="text-lg mb-6">
+        Medora is a virtual health library designed to provide users with reliable, up-to-date health information at their fingertips. Whether you are looking for informative articles, assessing your symptoms, or exploring ways to improve your well-being, Medora is here to guide you. Our mission is to empower individuals by delivering accurate and accessible health content, all in one place.
+      </p>
+      <p>Created by Taofeek, Mardiyyah - 
+        <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:text-blue-800">LinkedIn</a> | 
+        <a href="https://github.com/Mardie328" target="_blank" class="text-blue-600 hover:text-blue-800">GitHub</a> | 
+        <a href="https://twitter.com/TechieHijabie" target="_blank" class="text-blue-600 hover:text-blue-800">Twitter</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Developer Section -->
+  <section id="contact-dev" class="bg-gray-100 py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-4">Contact Developer</h2>
+        <p>Get in touch with the developer for inquiries or feedback.</p>
+        <a href="mailto:tolayinka328@gmail.com" class="text-blue-600 hover:text-blue-800">Email Developer</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>© 2024 Medora. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

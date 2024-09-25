@@ -1,0 +1,10 @@
+.feature-card:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card img {
+  max-width: 100px;
+}
